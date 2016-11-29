@@ -1,0 +1,177 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    /* padding: 0;*/
+    border: 0;
+    /* font-size: 100%;*/
+    /* font: inherit;*/
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu,  section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*--------------------------------- ------------------------------------------*/
+
+*{
+    font-size: 19px;
+    font-family: "Century Gothic";
+
+}
+
+nav{
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0;
+    height: 65px;
+}
+.flex-container-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    background-color: red;
+
+    padding:0;
+}
+.iFlexBotonera{
+
+}
+.flex-container-menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    padding:0;
+    height: 100%;
+
+}
+.flex-hueco-menu{
+    flex-grow:2;
+}
+.iFlexLogo{
+    width:15%;
+    background-color: lawngreen;
+    /*height:10%;*/
+    margin-left:0;
+}
+.iFlexBotonera{
+    width:250px;
+}
+.imgLogo{
+    width:100%;
+    height:100%;
+}
+.menuBoton{
+    text-decoration:none;
+    color:black;
+    text-align: center;
+
+}
+
+.iFlexTwitter, .iFlexFacebook, .iFlexSoundcloud, .iFlexYoutube,.iFlexInstagram {
+    /*padding-left: 38px;*/
+    height: 32px;
+    line-height: 32px;
+    background-image: url("../images/sprRRSSP.png");
+    background-repeat: no-repeat;
+}
+.iFlexFacebook{
+     width:50px;
+     height: 49px;
+     background-position: 0 0;
+ }
+.iFlexTwitter{
+    width:50px;
+    height: 49px;
+    background-position: -50px 0;
+}
+.iFlexSoundcloud{
+    width:50px;
+    height: 49px;
+    background-position: -100px 0;
+}
+.iFlexYoutube{
+    width:50px;
+    height: 49px;
+    background-position: -150px 0;
+}
+.iFlexInstagram{
+    width:50px;
+    height: 49px;
+    background-position: -200px 0;
+}
+
+.iFlexFacebook:hover{
+
+    background-position: 0 -49px;
+}
+.iFlexTwitter:hover{
+
+    background-position: -50px -49px;
+}
+.iFlexSoundcloud:hover{
+
+    background-position: -100px -49px;
+}
+.iFlexYoutube:hover{
+
+    background-position: -150px -49px;
+}
+.iFlexInstagram:hover{
+
+    background-position: -200px -49px;
+}
+.iFlexFacebook:active{
+
+    background-position: 0 -98px;
+}
+.iFlexTwitter:target{
+
+    background-position: -50px -98px;
+}
+.iFlexSoundcloud:target{
+
+    background-position: -100px -98px;
+}
+.iFlexYoutube:target{
+
+    background-position: -150px -98px;
+}
+.iFlexInstagram:target{
+
+    background-position: -200px -98px;
+}
