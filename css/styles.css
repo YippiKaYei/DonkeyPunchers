@@ -8,7 +8,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu,  section {
+footer, header,  menu,  section {
     display: block;
 }
 body {
@@ -45,11 +45,26 @@ table {
 
 *{
     font-size: 19px;
-    font-family: "Century Gothic";
+
 
 }
 
+header{
+    position: fixed;
+    top: 0;
+    height:65px;
+    width:100%;
+
+}
+
+
+
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 9000;
 
 }
 .flex-container {
@@ -77,6 +92,7 @@ nav{
     justify-content: space-around;
     padding:0;
     height: 100%;
+    font-family:miFuente;
 
 }
 .flex-hueco-menu{
@@ -101,7 +117,19 @@ nav{
     text-align: center;
 
 }
-
+main{
+    margin-top:65px;
+}
+.mainContainer{
+max-width: 1024px;
+    background-color: darkgray;
+    font-family: "Century Gothic";
+    margin-left:10%;
+    margin-right: 10%;
+}
+.iFlexInicio,.iFlexDonkey, .iFlexConciertos,.iFlexGaleria,.iFlexContacto{
+    font-family:miFuente;
+}
 .iFlexTwitter, .iFlexFacebook, .iFlexSoundcloud, .iFlexYoutube,.iFlexInstagram {
     /*padding-left: 38px;*/
     height: 32px;
@@ -174,4 +202,16 @@ nav{
 .iFlexInstagram:target{
 
     background-position: -200px -98px;
+}
+.anchor{
+    display: block;
+    height: 65px; /*same height as header*/
+    margin-top: -65px; /*same height as header*/
+    visibility: hidden;
+}
+
+@font-face {
+    font-family: 'miFuente';
+    src : url('../fonts/tatti.ttf');
+
 }
