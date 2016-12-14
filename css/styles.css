@@ -54,9 +54,12 @@ header{
     top: 0;
     height:65px;
     width:100%;
+    background-color: black;
 
 }
-
+body{
+    background-color: black;
+}
 
 
 nav{
@@ -78,12 +81,15 @@ nav{
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
-    background-color: red;
+    /*background-color: red;*/
 
     padding:0;
 }
 .iFlexBotonera{
 
+}
+.conciCartel{
+    width:50%;
 }
 .flex-container-menu{
     display: flex;
@@ -93,6 +99,7 @@ nav{
     padding:0;
     height: 100%;
     font-family:miFuente;
+    background-color: black;
 
 }
 .flex-hueco-menu{
@@ -100,7 +107,7 @@ nav{
 }
 .iFlexLogo{
     width:15%;
-    background-color: lawngreen;
+    /*background-color: lawngreen;*/
     /*height:10%;*/
     margin-left:0;
 }
@@ -111,10 +118,21 @@ nav{
     width:100%;
     height:100%;
 }
+
+.bellisimoDonkey {
+    float: left;
+    margin-right:10px;
+    max-width: 30%;
+
+
+}
+
 .menuBoton{
     text-decoration:none;
-    color:black;
+    color:white;
     text-align: center;
+    padding-top: 10px;
+    background-color: black;
 
 }
 main{
@@ -122,13 +140,16 @@ main{
 }
 .mainContainer{
 max-width: 1024px;
-    background-color: darkgray;
+    background-color: darkslategray;
     font-family: "Century Gothic";
+    color:white;
     margin-left:10%;
     margin-right: 10%;
 }
 .iFlexInicio,.iFlexDonkey, .iFlexConciertos,.iFlexGaleria,.iFlexContacto{
     font-family:miFuente;
+    color:white;
+
 }
 .iFlexTwitter, .iFlexFacebook, .iFlexSoundcloud, .iFlexYoutube,.iFlexInstagram {
     /*padding-left: 38px;*/
@@ -214,4 +235,50 @@ max-width: 1024px;
     font-family: 'miFuente';
     src : url('../fonts/tatti.ttf');
 
+}
+section{
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+p{
+    margin-bottom:2%;
+}
+
+/*EMPIEZA LA MANDANGA MODAL*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
